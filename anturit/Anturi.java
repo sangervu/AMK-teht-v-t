@@ -3,9 +3,11 @@ package anturit;
 
 public class Anturi {
     
-   static double lämpötila = 0; // alustetaan lämpötila niin, että while loop lähtee käyntiin
+   //static double lämpötila = 0; // alustetaan lämpötila niin, että while loop lähtee käyntiin
      
     public double getLämpötila(){
+        
+    double lämpötila = 0;
      
     while (lämpötila < 10. || lämpötila > 30.) {    
     // tähän satunnaismuuttuja, joka generoi lämpötilan
