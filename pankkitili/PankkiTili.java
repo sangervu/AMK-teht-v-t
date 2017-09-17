@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pankkitili;
 
-/**
- *
- * @author angervuorisa
- */
+
 public class PankkiTili {
-    
+private double saldo = 0;
+double nosto;
+double pano;
+
+double getSaldo(double nosto){
+return saldo;
+}
+
+public void otto(double pano){
+saldo = saldo + nosto;
+}
+
 }
