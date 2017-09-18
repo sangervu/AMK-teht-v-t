@@ -6,12 +6,16 @@ private double saldo = 0;
 double nosto;
 double pano;
 
-double getSaldo(double nosto){
+double getSaldo(){
 return saldo;
 }
 
-public void otto(double pano){
+public void otto(double määrä){
 saldo = saldo + nosto;
+}
+
+public void pano(double määrä){
+saldo = saldo + määrä;
 }
 
 }
