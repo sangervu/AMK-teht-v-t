@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pankkitili;
 
-/**
- *
- * @author angervuorisa
- */
 public class MaksuKortti {
     
+private int PIN;
+
+  public void setPin(int pin) {
+  if(pin>=0 && pin<=9999){    
+  PIN = pin;
+  }
+  else{ 
+  System.out.println("Väärä PIN");    
+  }
+  }
 }
