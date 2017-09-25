@@ -6,16 +6,17 @@ public class Opiskelija {
     private String etuNimi;
     private String sukuNimi;
 
-    public void Opiskelija() {
 
-        this.Opiskelija("0000000", "Ei etunimä", "Ei sukunimeä");
+     Opiskelija() {
+
+        this("000000", "Ei etunimä", "Ei sukunimeä");
     }
 
-    public void Opiskelija(String a, String b, String c) {
+    Opiskelija(String a, String b, String c) {
 
-        opiskelijaNumero = a;
-        etuNimi = b;
-        sukuNimi = c;
+        this.opiskelijaNumero = a;
+        this.etuNimi = b;
+        this.sukuNimi = c;
 
     }
 
