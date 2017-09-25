@@ -6,8 +6,7 @@ public class Opiskelija {
     private String etuNimi;
     private String sukuNimi;
 
-
-     Opiskelija() {
+    Opiskelija() {
 
         this("000000", "Ei etunimä", "Ei sukunimeä");
     }

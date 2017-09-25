@@ -1,13 +1,21 @@
 package opiskelija;
 
+import java.util.Arrays;
+
 public class Opiskelijaryhmä {
-    
-    String [] opiskelija = new String[0];
 
+    int uusiKoko = 0;
+
+    Opiskelija[] opRyhmäTaulukko = new Opiskelija[0];
     private String opiskelijaRyhmäTunnus;
+    Opiskelija opi;
 
-    Opiskelijaryhmä(String a, String b) {
+    Opiskelijaryhmä() {
+    }
+
+    Opiskelijaryhmä(String a, Opiskelija opi) {
         this.opiskelijaRyhmäTunnus = a;
+        this.opi = new Opiskelija();
     }
 
     public String getORT() {
@@ -16,6 +24,14 @@ public class Opiskelijaryhmä {
 
     public void setORT(String b) {
         this.opiskelijaRyhmäTunnus = b;
+    }
+
+    public void lisää(Opiskelija opiObjekti) {
+
+        uusiKoko = uusiKoko + 1;
+        Arrays.copyOf(opRyhmäTaulukko, uusiKoko);
+        opRyhmäTaulukko[uusiKoko] = opiObjekti;
+
     }
 
 }
