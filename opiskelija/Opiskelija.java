@@ -6,6 +6,19 @@ public class Opiskelija {
     private String etuNimi;
     private String sukuNimi;
 
+    public void Opiskelija() {
+
+        this.Opiskelija("0000000", "Ei etunimä", "Ei sukunimeä");
+    }
+
+    public void Opiskelija(String a, String b, String c) {
+
+        opiskelijaNumero = a;
+        etuNimi = b;
+        sukuNimi = c;
+
+    }
+
     public void setOpiskelijaNumero(String numero) {
 
         this.opiskelijaNumero = numero;
@@ -20,9 +33,9 @@ public class Opiskelija {
         this.sukuNimi = sukuNimi;
     }
 
-    public String getOpiskelijanTiedot(){
-    
-    return (opiskelijaNumero+" " + etuNimi+" " + sukuNimi);
+    public String getOpiskelijanTiedot() {
+
+        return (opiskelijaNumero + " " + etuNimi + " " + sukuNimi);
     }
-    
+
 }
