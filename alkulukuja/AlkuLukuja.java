@@ -1,46 +1,50 @@
 package alkulukuja;
+import java.util.Arrays;
 
 public class AlkuLukuja {
 
-    public static int[] alkuLukuja;
-    private int alkuLukujenLukumäärä = 1;
+    private int[] alkuLukuja;
+    private int suurinAlkuluku;
+    private int alLukuMäärä;
 
-    public void setLukumäärä(int n) {
+    public void setSuurinAlkuluku(int n) {
 
-        this.alkuLukujenLukumäärä = n;
+        this.suurinAlkuluku = n; //alkulukujen lukumäärä kun n=1000
 
-        alkuLukuja = new int[alkuLukujenLukumäärä];
-        int arrayLaskuri = 0; //tämä on taulukkolaskuri
+        alkuLukuja = new int[suurinAlkuluku];
+
         int i = 0; //tällä käynnistetään alkulukejn etsintä
+        int k = -1;
 
         //mennään koko taulukko läpi
-        int max = alkuLukujenLukumäärä;
-        for (arrayLaskuri = 0; arrayLaskuri <= alkuLukujenLukumäärä; arrayLaskuri++) {
+        for (i = 1; i < suurinAlkuluku; i++) {
 
-            for (i = 1; i < max-10; i++) {
+            boolean isPrimeNumber = true;
 
-                boolean isPrimeNumber = true;
-
-                // check to see if the number is prime
-                for (int j = 2; j < i; j++) {
-                    if (i % j == 0) {
-                        isPrimeNumber = false;
-                        break; // exit the inner for loop
-                    }
+            // check to see if the number is prime
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrimeNumber = false;
+                    break; // exit the inner for loop
                 }
+            }
 
-                // print the number if prime
-                if (isPrimeNumber) {
-                    System.out.print(i + " ");
-                    //alkuLukuja[arrayLaskuri] = i;
-                }
+            // print the number if prime
+            if (isPrimeNumber) {
+                //System.out.print(i + " ");
+                k = k + 1;
+                this.alkuLukuja[k] = i;
             }
         }
         
-        /*for (int t: alkuLukuja) {
-        System.out.println(arrayLaskuri); 
-}*/
+        this.alLukuMäärä = k;
+        this.alkuLukuja = Arrays.copyOf(alkuLukuja, k+1);
 
+    }
+
+    public double getAlLukumäärä() {
+
+        return alLukuMäärä;
     }
 
     public int[] getAlkuluvut() {
