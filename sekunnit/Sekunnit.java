@@ -20,6 +20,8 @@ public class Sekunnit {
 
     }
 
+    //tehdään metodi samaan luokkaan. Return palauttaa kutsujalle, kts. yllä. Staattista metodia vosii kutsua mitä tahansa muustakin
+    //luokasta, jos niitä olisi tässä harjoituksessa.
     public static int sekunteina(int tunnit, int minuutit, int sekunnit) {
 
         return (tunnit * 60 * 60 + minuutit * 60 + sekunnit);
