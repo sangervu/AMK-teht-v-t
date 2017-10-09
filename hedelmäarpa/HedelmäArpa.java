@@ -4,41 +4,30 @@ import java.util.Random;
 
 public class HedelmäArpa {
 
-     static String arpa;
-     static int intArpa;
-
-    /*enum Hedelmä {
-        $,
-        ¤,
-        €,
-        £,
-        Q,
-        Z,
-        Ö,
-        Ä,
-    }*/
+    static String arpa;
+    static int intArpa;
 
     public static void hedelmaArpa() {
 
         Random rnd = new Random();//hyödynnetään valmista luokkaa java.util.Random ja tehdään sille objekti
 
-        int randInt = rnd.nextInt(8);
+        int randInt = rnd.nextInt(5);
 
         switch (randInt) {
             case 0:
-                System.out.println("$");
-                arpa = "$";
+                System.out.println("%");
+                arpa = "%";
                 intArpa = 1;
                 break;
 
             case 1:
-                System.out.println("¤");
-                arpa = "¤";
+                System.out.println("@");
+                arpa = "@";
                 intArpa = 2;
                 break;
             case 2:
-                System.out.println("€");
-                arpa = "€";
+                System.out.println("$");
+                arpa = "$";
                 intArpa = 3;
                 break;
             case 3:
@@ -47,8 +36,8 @@ public class HedelmäArpa {
                 intArpa = 4;
                 break;
             case 4:
-                System.out.println("Q");
-                arpa = "Q";
+                System.out.println("B");
+                arpa = "B";
                 intArpa = 5;
                 break;
             case 5:
