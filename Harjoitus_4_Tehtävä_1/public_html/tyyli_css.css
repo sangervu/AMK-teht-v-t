@@ -1,0 +1,35 @@
+#talot {
+  width: 600px;
+  height: 800px;
+  margin: 10px;
+  tasaus vasemmalle
+  ylivuoto arvoon auto
+  
+}
+
+.taloContainer {
+  display arvo block
+  border 1px solid ja harmahtava väri
+  leveys 570px
+  korkeus 165px
+  valitse mieli fonttisi
+  valitse fontin kooksi 12px
+  margin ja padding 2px
+}
+
+.taloImage {
+  leveys 225px
+  korkeys 160px
+  sijoittelu vasemmalle
+  margin 2px
+}
+
+p.otsikko {
+  fonttikoko 14px
+  fontin muoto bold
+}
+
+p.kuvaus {
+  fontin tyyli italic
+  fontin koko 10px
+}
